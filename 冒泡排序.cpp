@@ -27,13 +27,13 @@ void BubbleSort(int A[], int N)
 
 int main ()
 {
-	int len = sizeof(A)/sizeof(int);// Array Length
-	printf("Begin: ");
+	int len = sizeof(A)/sizeof(int);//数组长度 
+	printf("排序前: ");
 	for(int i=0;i<len;i++)
 		printf("%d ",A[i]);
 		
-	BubbleSort(A,len);//Using BubbleSort
-	printf("After: ");
+	BubbleSort(A,len);//调用冒泡排序 
+	printf("排序后：");
 	for(int i=0;i<len;i++)
 		printf("%d ", A[i]);
 	return 0;
